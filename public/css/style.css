@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color:beige;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 200px;
+}
+.hide{
+    display: none;
+}
+#editDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div{
+    display: flex;
+    flex-direction: row;
+    
+}
+input {
+    width: 200px ;
+    height: 40px;
+}

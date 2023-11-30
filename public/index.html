@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Super Chat</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id = "editDiv">
+
+        <div id = "auth_login">
+            <h1>Hello User !</h1>
+            <button id="auth_user" >Connection</button>
+        </div>
+    </div>
+
+    <div id = "editDiv">
+
+        <div id = "chat" class = hide>   
+            <h1>Super chat !</h1>
+            <div>
+                <h2>Channel</h2>
+                <ul>
+                    <li>General</li>
+                    <li>Prog</li>
+                    <li>Video game</li>
+                </ul>
+            </div>
+            <div>
+                <input type="text" placeholder="Enter your text here">
+                <button type="button">Submit</button>
+            </div>
+            <div>
+                <ul id = usersList></ul>
+            </div>
+        </div>
+    </div>
+
+    <button id = "disconect" class="hide">Disconect</button>
+    
+    <template id = "usersTpl"><li></li></template>
+    
+
+
+    <script src="/socket.io/socket.io.min.js"></script>
+    <script src="/scripts/main.js" type="module"></script>
+</body>
+</html>
